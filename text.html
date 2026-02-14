@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Regita Tersayang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="overlay">
+        <div class="overlay-content">
+            <h2>Ada pesan kecil untukmu...</h2>
+            <button id="start-btn">Buka Kejutan ✨</button>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Pramesti Regita Cahyani ♡</div>
+            <ul>
+                <li><a href="#wish">Wish</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#surprise">Future</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="hero">
+        <div class="glass-card">
+            <h2 id="date-display"></h2>
+            <h1 id="age-display"></h1>
+            <p class="fade-in-text">Hari dimana dunia menjadi sedikit lebih indah karena kehadiranmu.</p>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+<section id="wish" class="container">
+    <div class="glass-card long-text">
+        <span class="badge">A Deep Letter for You</span>
+        <h2>Untuk Gadis Paling Berarti, Regita...</h2>
+        <div class="text-content">
+            <p>Selamat ulang tahun, <strong>Pramesti Regita Cahyani</strong>. Hari ini, 17 Februari 2026, bukan sekadar pergantian angka bagiku. Ini adalah perayaan atas hadirnya manusia paling tulus yang pernah aku temui di dunia ini.</p>
+            
+            <p>Sayang, mungkin aku bukan orang yang paling pandai menyusun kata di depanmu secara langsung. Seringkali lidahku kelu karena terlalu kagum melihat betapa hebatnya kamu. Melalui baris-baris kode ini, biarkan aku jujur tentang banyak hal yang mungkin jarang kusampaikan.</p>
+
+            <p>Terima kasih karena sudah memilih untuk tetap bertahan, tetap bersinar, dan tetap menjadi Regita yang lembut hatinya meski dunia mungkin seringkali tidak ramah padamu. Kamu adalah definisi dari kekuatan yang dibungkus dengan kelembutan. Aku melihat bagaimana kamu berjuang, bagaimana kamu peduli pada orang lain, dan bagaimana kamu mencintaiku dengan cara yang begitu sabar—sabar yang kadang membuatku bertanya, "Apa yang sudah aku lakukan sampai bisa seberuntung ini memilikimu?"</p>
+
+            <blockquote>
+                "Jika dunia memintamu untuk terus berlari, pulanglah kepadaku. Biar aku yang menjadi tempatmu melepas lelah, karena bagiku, bahagiamu adalah tujuan paling utamaku."
+            </blockquote>
+
+            <p>Aku minta maaf jika hadiah ini terasa sederhana. Aku belum bisa membelikanmu kemewahan dunia yang kamu impikan, tapi aku berjanji akan memberikan seluruh usaha dan waktuku untuk memastikan kamu tidak pernah merasa sendirian. Website ini aku buat di tengah malam, di sela-sela kantukku, hanya agar saat kamu bangun nanti, kamu tahu bahwa ada seseorang yang selalu memikirkanmu bahkan di saat dunia sedang tertidur lelap.</p>
+
+            <p>Aku berdoa, di usiamu yang ke-23 ini, semesta lebih sering memelukmu. Semoga setiap air mata yang jatuh berubah menjadi permata kebahagiaan. Semoga pundakmu dikuatkan, langkahmu diringankan, dan semoga hatimu selalu dipenuhi dengan rasa syukur yang tak terhingga. Jangan pernah merasa kurang, karena bagiku, kamu adalah segalanya yang sudah cukup.</p>
+
+            <p>Terima kasih sudah menjadi bagian dari hidupku. Terima kasih sudah mengizinkanku menjadi saksi tumbuhmu. Tetaplah menjadi Regita yang aku kenal, yang senyumnya selalu bisa meruntuhkan ego dan lelahku. Aku mencintaimu, hari ini, esok, dan di setiap angka usia yang akan kita lalui bersama nanti. 🤍</p>
+        </div>
+    </div>
+</section>
+
+<section id="notes" class="container">
+    <h2 class="section-title">Hal-hal kecil yang aku suka darimu... ✨</h2>
+    <p style="margin-bottom: 20px;">(Klik setiap amplop untuk membukanya)</p>
+    <div class="notes-grid">
+        <div class="note-card" onclick="revealNote(this, 'Sabar seluas samudera yang kamu punya.')">📩</div>
+        <div class="note-card" onclick="revealNote(this, 'Cara kamu manggil aku pas lagi manja.')">📩</div>
+        <div class="note-card" onclick="revealNote(this, 'Gimana kamu selalu peduli hal-hal kecil tentangku.')">📩</div>
+        <div class="note-card" onclick="revealNote(this, 'Ketulusanmu yang nggak pernah dibuat-buat.')">📩</div>
+        <div class="note-card" onclick="revealNote(this, 'Semangatmu buat tetap jadi orang baik.')">📩</div>
+        <div class="note-card" onclick="revealNote(this, 'Tentu saja... senyum manismu itu.')">📩</div>
+    </div>
+</section>
+
+    <section id="gallery" class="container">
+        <h2 class="section-title">Memori & Senyuman 📸</h2>
+        <div class="gallery-grid">
+            <script>
+                for(let i=1; i<=45; i++) {
+                    document.write(`<div class="img-wrapper"><img src="${i}.png" alt="Memory ${i}" loading="lazy"></div>`);
+                }
+            </script>
+        </div>
+    </section>
+
+    <section id="surprise" class="container">
+        <div class="glass-card">
+            <h2>Menuju Bahagia Berikutnya</h2>
+            <p>Waktu tidak akan berhenti, dan sayangku pun begitu.</p>
+            <div id="countdown" class="countdown-timer"></div>
+            <div class="extra-message">
+                <p>Sampai jumpa di ulang tahun-ulang tahun berikutnya bersamaku. I love you more than words can say.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="bubbles"></div>
+    <audio id="bg-music" src="meet.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

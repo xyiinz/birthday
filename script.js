@@ -38,11 +38,11 @@ function typeWriter(elementId, text, speed) {
 }
 
 async function runIntro() {
-    await typeWriter('date-display', '17 Februari 2026', 100);
+    await typeWriter('date-display', '16 Februari 2026', 100);
     
     await new Promise(r => setTimeout(r, 500));
     
-    await typeWriter('age-display', 'Selamat Ulang Tahun ke-23, Pramesti Regita Cahyani ♡', 80);
+    await typeWriter('age-display', 'Selamat Ulang Tahun ke-24, Pramesti Regita Cahyani ♡', 80);
 }
 
 // Fitur Tiup Lilin (Interaktif)
